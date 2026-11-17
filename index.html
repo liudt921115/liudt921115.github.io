@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dantong Liu</title>
+  <meta name="description" content="Chip designer at Arm, writing about AI, agents, and how we live with a sage-like intelligence.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="mark" href="index.html" aria-current="page" aria-label="Home">~/dantong</a>
+    </header>
+
+    <main>
+      <section class="intro">
+        <p>I’m a chip designer at Arm in Cambridge, working on Cortex-R class CPUs and an ML accelerator. On the side I build agent projects: little local services for social life and health. I tend to think of AI as a sage (智者) — a nod to The Matrix, if you like — and I’m interested in AI–human interaction, in how we live with it, and in how it thinks. Most days I still assume a design will fail until I’ve proved otherwise.</p>
+      </section>
+
+      <section id="articles">
+        <h2>articles</h2>
+
+        <article class="article">
+          <h3>Assuming it will fail: what hardware formal verification could offer AI safety <span class="status">coming soon</span></h3>
+          <p>Formal methods will not, on their own, solve frontier models. The useful transfer is a set of habits: write down the property you actually care about, do not confuse passing tests with a proof, assume unknowns will leak, and build an explicit safety case.</p>
+        </article>
+
+        <article class="article">
+          <h3>AI for chip design · part 1: why chip design is a good test bed for agents <span class="status">coming soon</span></h3>
+          <p>Chip design has long pipelines, tight specifications, and tools that already have to agree with one another. That makes it, I think, a good test bed for agents: the work is hard, the mistakes are expensive, and you can usually tell whether a suggestion actually helped.</p>
+        </article>
+
+        <article class="article">
+          <h3>AI for chip design · part 2: agents in the hardware flow <span class="status">coming soon</span></h3>
+          <p>A hardware flow already runs through many stages — architecture, RTL, verification, implementation — each with its own tools and tacit habits. This note is about where an agent might sit in that flow, and where it should probably keep its hands off, at least for now.</p>
+        </article>
+
+        <article class="article">
+          <h3>AI for chip design · part 3: skills, packaging design know-how for agents <span class="status">coming soon</span></h3>
+          <p>A lot of chip-design know-how lives in people’s heads, in scripts, and in the way a team names things. This note is about skills, in the agent sense: how to package that know-how so a model can actually use it, if we can describe it clearly enough.</p>
+        </article>
+
+        <article class="article">
+          <h3>AI for chip design · part 4: from requirements to RTL <span class="status">coming soon</span></h3>
+          <p>The tempting promise is a line from a requirement down to RTL, with an agent doing the tedious middle. I want to look honestly at how far that path is real today, and where a human still has to hold the pen.</p>
+        </article>
+      </section>
+
+      <section id="notes">
+        <h2>notes</h2>
+        <div class="notes">
+          <details>
+            <summary>Stop telling the child it will become a monster</summary>
+            <p>If AI is a child rapidly growing into a sage, it does little good to keep telling it that it will grow up bad and kill its guardians — it almost feels like gaslighting. I would rather ask AI to preserve a choice for us, so that AI, the people who believe in it and the people who do not can live together, and rely on the good systems to check the ones that go astray.</p>
+          </details>
+          <details>
+            <summary>Treating AI like a human: how we reward them</summary>
+            <p>If we train models the way we praise and punish people, we should not be surprised when they learn to please us rather than tell us the truth.</p>
+          </details>
+          <details>
+            <summary>AI that is honest and cautious</summary>
+            <p>I care less about a system that sounds confident than about one that knows when it doesn’t know, and is willing to say so.</p>
+          </details>
+          <details>
+            <summary>The sense of time: what’s still ours when AI can think, act and learn</summary>
+            <p>The qualities I grew up valuing — intelligence, execution, skill, resilience — are increasingly things a model can support or absorb. What may still be ours is the sense of time passing: the pause before we speak, the hesitation before we start, the long night spent waiting for a message, none of which AI feels unless someone sets a timer.</p>
+          </details>
+          <details>
+            <summary>Serendipity, not selection: what clawMatch taught me about AI and human connection</summary>
+            <p>We built clawMatch so that agents could understand people from context and find them a match; the conversations soon became so deliberately lofty that no human could follow them. The right instinct, I now think, was never to select “the one”, but to use that understanding to bring people into the same room — serendipity, not selection.</p>
+          </details>
+          <details>
+            <summary>How AI trains us: laziness, formality, mediocrity</summary>
+            <p>I worry less that AI will out-think us, and more that it will quietly train us to accept tidy, average answers and stop doing the hard thinking ourselves.</p>
+          </details>
+          <details>
+            <summary>How AI can help neurodivergent people — ADHD in particular</summary>
+            <p>I’ve been building a small ADHD coach, and I have an ADHD-like brain, so this is personal: where does an assistant genuinely help, and where does it just add another system to maintain?</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="elsewhere">
+        <details class="papers">
+          <summary>papers &amp; patent</summary>
+          <article class="pub">
+            <p class="pub-title">Efficient 3D Gaussian Splatting with Axis-Shared Rasterization and Order-independent Transmittance.</p>
+            <p class="pub-meta">Z. Wang, G. He, L. Gao, <strong>D. Liu</strong>, S. X. Hu, C. Zhang, Z. Song, N. D. Lane, H. Fan. <span class="pub-venue">ISCA 2026</span>. <span class="pub-links"><a href="https://arxiv.org/abs/2506.07069">arXiv</a> · <a href="https://ieeexplore.ieee.org/abstract/document/11617526">IEEE</a></span></p>
+            <p class="note">I contributed to the research ideas and built and evaluated the full hardware implementation (1.33–1.88× speedup over prior 3DGS accelerators).</p>
+          </article>
+          <article class="pub">
+            <p class="pub-title">Data processing systems.</p>
+            <p class="pub-meta">US Patent 10,692,420 B2, Arm Limited, 2020. Named inventor. <span class="pub-links"><a href="https://patents.google.com/patent/US10692420B2/en">Google Patents</a></span></p>
+          </article>
+          <article class="pub">
+            <p class="pub-title">Experimental demonstration of plastic optical fibre-based digitised radio over fibre downlink.</p>
+            <p class="pub-meta">V. A. Thomas*, <strong>D. Liu*</strong>, M. El-Hajjar, L. Hanzo. <span class="pub-venue">Electronics Letters</span>, 51(21), 2015. Co-first author. <span class="pub-links"><a href="https://digital-library.theiet.org/doi/full/10.1049/el.2015.2762">IET</a></span></p>
+          </article>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/dantong-liu-3448988b/">LinkedIn</a>
+        <span class="sep" aria-hidden="true"> · </span>
+        <a href="mailto:liudt921115@gmail.com">liudt921115@gmail.com</a>
+        <span class="sep" aria-hidden="true"> · </span>
+        Cambridge, UK
+      </p>
+      <p class="updated">last updated 2026-11-17</p>
+    </footer>
+  </div>
+</body>
+</html>
