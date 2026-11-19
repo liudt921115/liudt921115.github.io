@@ -370,3 +370,48 @@ footer {
     opacity: 1;
   }
 }
+
+
+/* Essay pages. Scoped so homepage typography is unchanged. */
+
+.essay h1 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  margin: 0 0 0.4rem;
+}
+
+.essay .date {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0 0 1.85rem;
+}
+
+.essay h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.22rem;
+  letter-spacing: 0;
+  color: var(--text);
+  margin: 2.1rem 0 0.85rem;
+}
+
+.essay h2::before {
+  content: none;
+}
+
+.essay ul,
+.essay ol {
+  margin: 0 0 1em;
+  padding-left: 1.4rem;
+}
+
+.essay li {
+  margin: 0 0 0.4rem;
+}
+
+.essay li:last-child {
+  margin-bottom: 0;
+}
