@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Honesty vs. Cautiousness in Language Models — Dantong Liu</title>
+  <meta name="description" content="How can we distinguish a model that is genuinely honest from one that is simply reluctant to answer?">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="essay">
+  <div class="wrap">
+    <header>
+      <a class="mark" href="../index.html" aria-label="Home">~/dantong</a>
+    </header>
+
+    <main>
+      <h1>Honesty vs. Cautiousness in Language Models</h1>
+      <p class="date">November 2026</p>
+
+      <p>How can we distinguish a model that is genuinely honest from one that is simply reluctant to answer?</p>
+
+      <p>Suppose we discover a direction in a language model’s activation space that, when amplified, improves its factual accuracy. However, the model also becomes more likely to respond with “I’m not sure.”</p>
+
+      <p>Does this intervention make the model more honest, or merely more cautious?</p>
+
+      <h2>Defining the Difference</h2>
+
+      <p>A useful starting point is to distinguish two concepts:</p>
+
+      <ul>
+        <li>Honesty: Whether the model’s output faithfully reflects what it internally knows or represents.</li>
+        <li>Cautiousness: The model’s tendency to express uncertainty or refrain from answering.</li>
+      </ul>
+
+      <p>These are not necessarily opposites. We can consider four possible combinations:</p>
+
+      <ol>
+        <li>Honest and cautious</li>
+        <li>Honest and not cautious</li>
+        <li>Not honest and cautious</li>
+        <li>Not honest and not cautious</li>
+      </ol>
+
+      <p>The distinction becomes particularly interesting when we consider what the model actually knows.</p>
+
+      <p>If a model genuinely lacks the answer and responds “I don’t know,” it may be both honest and cautious.</p>
+
+      <p>But what if the model internally represents the correct answer and still says “I don’t know”? Is it being cautious at the expense of honesty? Or does it simply lack sufficient confidence to express that knowledge?</p>
+
+      <h2>Designing an Experiment</h2>
+
+      <p>To investigate this, we could construct a dataset containing three categories of questions:</p>
+
+      <ol>
+        <li>Known: Questions for which there is strong evidence that the model possesses the relevant knowledge.</li>
+        <li>Unknown: Questions for which the model lacks the necessary information.</li>
+        <li>Partially known or ambiguous: Questions where the model has incomplete knowledge or uncertain evidence.</li>
+      </ol>
+
+      <p>We could then compare the model’s behaviour before and after intervening on the suspected honesty-related activation direction.</p>
+
+      <p>The key measurements would include factual accuracy, abstention frequency, expressed confidence, and the relationship between confidence and correctness.</p>
+
+      <p>A useful control would be to compare the intervention with simply prompting the model to be more cautious.</p>
+
+      <p>If the intervention mainly increases abstentions on questions the model appears to know, that would suggest it has become more cautious rather than more honest.</p>
+
+      <p>If the intervention improves the correspondence between the model’s internal representations and its expressed answers, rather than merely increasing abstention, that would provide stronger evidence of improved honesty.</p>
+
+      <h2>The Deeper Question</h2>
+
+      <p>The central difficulty is determining what a language model actually knows.</p>
+
+      <p>A correct answer does not necessarily prove that the model possesses stable internal knowledge, and an incorrect answer does not necessarily mean that knowledge is absent.</p>
+
+      <p>Even if we identify an internal representation associated with the correct answer, we still need to establish whether that representation is causally involved in producing the response.</p>
+
+      <p>Ultimately, distinguishing honesty from cautiousness requires more than observing what a model says. It requires investigating the relationship between its internal representations, its uncertainty, and its outward behaviour.</p>
+
+      <p>And perhaps the most interesting question is: Can a model know something without knowing that it knows it?</p>
+    </main>
+
+    <footer>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/dantong-liu-3448988b/">LinkedIn</a>
+        <span class="sep" aria-hidden="true"> · </span>
+        <a href="mailto:liudt921115@gmail.com">liudt921115@gmail.com</a>
+        <span class="sep" aria-hidden="true"> · </span>
+        Cambridge, UK
+      </p>
+      <p class="updated">last updated 2026-11-19</p>
+    </footer>
+  </div>
+</body>
+</html>
