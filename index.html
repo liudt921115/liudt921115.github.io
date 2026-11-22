@@ -3,65 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dantong Liu</title>
-  <meta name="description" content="Chip designer at Arm, writing about AI, agents, and how we live with a sage-like intelligence.">
+  <title>Dantong Liu — AI, art & the human experience</title>
+  <meta name="description" content="Dantong Liu writes about AI, interpretability, engineering, art, and being human.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="mark" href="index.html" aria-current="page" aria-label="Home">~/dantong</a>
-    </header>
-
-    <main>
-      <section class="intro">
-        <p>I’m Dantong.</p>
-        <p>I’m a chip engineer by training, a curious wanderer by nature, and perhaps an artist in the making.</p>
-        <details class="more">
-          <summary>more about me</summary>
-          <p>I’m fascinated by the different ways we make sense of the world — through logic, observation, intuition, and experience. I enjoy taking things apart to understand how they work, but I’m equally drawn to things that resist easy explanations, especially people, art, and mind. AI is a particularly interesting meeting point for these interests: something we can engineer, yet whose behaviour still raises questions about intelligence, understanding, and our relationship with technology.</p>
-          <p>I like things that make me think and things that make me feel — preferably both. In life, that might mean exploring contemporary art, taking photographs, snowboarding, wandering through unfamiliar places, growing my own vegetables, experimenting with new things, or having a conversation that unexpectedly lasts until midnight.</p>
-        </details>
-        <p>This is a little corner of the internet for things I’m building, learning, questioning, and occasionally overthinking — mostly about AI, but inevitably about being human too.</p>
-      </section>
-
-      <section id="articles">
-        <h2>articles</h2>
-
-        <article class="article">
-          <h3><a href="writing/honesty-vs-cautiousness.html">Honesty vs. Cautiousness in Language Models</a></h3>
-          <p>How can we distinguish a model that is genuinely honest from one that is simply reluctant to answer?</p>
-        </article>
-
-        <article class="article">
-          <h3>Assuming it will fail: what hardware formal verification could offer AI safety <span class="status">coming soon</span></h3>
-          <p>Formal methods will not, on their own, solve frontier models. The useful transfer is a set of habits: write down the property you actually care about, do not confuse passing tests with a proof, assume unknowns will leak, and build an explicit safety case.</p>
-        </article>
-
-        <article class="article">
-          <h3>AI for chip design · part 1: why chip design is a good test bed for agents <span class="status">coming soon</span></h3>
-          <p>Chip design has long pipelines, tight specifications, and tools that already have to agree with one another. That makes it, I think, a good test bed for agents: the work is hard, the mistakes are expensive, and you can usually tell whether a suggestion actually helped.</p>
-        </article>
-
-        <article class="article">
-          <h3>AI for chip design · part 2: agents in the hardware flow <span class="status">coming soon</span></h3>
-          <p>A hardware flow already runs through many stages — architecture, RTL, verification, implementation — each with its own tools and tacit habits. This note is about where an agent might sit in that flow, and where it should probably keep its hands off, at least for now.</p>
-        </article>
-
-        <article class="article">
-          <h3>AI for chip design · part 3: skills, packaging design know-how for agents <span class="status">coming soon</span></h3>
-          <p>A lot of chip-design know-how lives in people’s heads, in scripts, and in the way a team names things. This note is about skills, in the agent sense: how to package that know-how so a model can actually use it, if we can describe it clearly enough.</p>
-        </article>
-
-        <article class="article">
-          <h3>AI for chip design · part 4: from requirements to RTL <span class="status">coming soon</span></h3>
-          <p>The tempting promise is a line from a requirement down to RTL, with an agent doing the tedious middle. I want to look honestly at how far that path is real today, and where a human still has to hold the pen.</p>
-        </article>
-      </section>
-
-      <section id="notes">
-        <h2>notes</h2>
-        <div class="notes">
+<div class="wrap">
+  <header class="site-header">
+    <a class="mark" href="index.html" aria-label="Home">Dantong<span class="mark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#articles">Writing</a><a href="#notes">Notes</a><a href="#research">Research</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="intro" id="about">
+      <h1>Hi, I'm <em>Dantong.</em></h1>
+      <p class="lead">I'm a chip design engineer by training, a curious wanderer by nature, and perhaps an <em>artist in the making.</em></p>
+      <p>I'm fascinated by the different ways we make sense of the world — through logic, observation, intuition, and experience. I enjoy taking things apart to understand how they work, but I'm equally drawn to things that resist easy explanations, especially people, art, and mind.</p>
+      <details class="more">
+        <summary>A little more about me</summary>
+        <p>AI is a particularly interesting meeting point for these interests: something we can engineer, yet whose behaviour still raises questions about intelligence, understanding, and our relationship with technology.</p>
+        <p>I like things that make me think and things that make me feel — preferably both. In life, that might mean exploring contemporary art, taking photographs, snowboarding, wandering through unfamiliar places, growing my own vegetables, experimenting with new things, or having a conversation that unexpectedly lasts until midnight.</p>
+      </details>
+      <p class="intro-outro">This is a little corner of the internet for things I'm building, learning, questioning, and occasionally overthinking — mostly about AI, but inevitably about being human too.</p>
+      <a class="text-link" href="#articles">Explore the writing <span aria-hidden="true">↗</span></a>
+    </section>
+    <section id="articles" class="content-section">
+      <div class="section-heading"><span class="section-index">01 / WRITING</span><h2>Ideas in progress<span class="accent">.</span></h2><p>Questions about intelligence, engineering, and what it means to understand.</p></div>
+      <div class="article-list"><article class="article"><span class="article-index">01</span><div><h3><a href="writing/honesty-vs-cautiousness.html">Honesty vs. Cautiousness in Language Models</a></h3><p>How can we distinguish a model that is genuinely honest from one that is simply reluctant to answer?</p></div><span class="article-action" aria-hidden="true">↗</span></article>
+<article class="article"><span class="article-index">02</span><div><h3>Assuming it will fail: what hardware formal verification could offer AI safety</h3><p>Formal methods will not, on their own, solve frontier models. The useful transfer is a set of habits: write down the property you actually care about, do not confuse passing tests with a proof, assume unknowns will leak, and build an explicit safety case.</p><span class="status">COMING SOON</span></div></article>
+<article class="article"><span class="article-index">03</span><div><h3>AI for chip design · part 1: why chip design is a good test bed for agents</h3><p>Chip design has long pipelines, tight specifications, and tools that already have to agree with one another. That makes it, I think, a good test bed for agents: the work is hard, the mistakes are expensive, and you can usually tell whether a suggestion actually helped.</p><span class="status">COMING SOON</span></div></article>
+<article class="article"><span class="article-index">04</span><div><h3>AI for chip design · part 2: agents in the hardware flow</h3><p>A hardware flow already runs through many stages — architecture, RTL, verification, implementation — each with its own tools and tacit habits. This note is about where an agent might sit in that flow, and where it should probably keep its hands off, at least for now.</p><span class="status">COMING SOON</span></div></article>
+<article class="article"><span class="article-index">05</span><div><h3>AI for chip design · part 3: skills, packaging design know-how for agents</h3><p>A lot of chip-design know-how lives in people’s heads, in scripts, and in the way a team names things. This note is about skills, in the agent sense: how to package that know-how so a model can actually use it, if we can describe it clearly enough.</p><span class="status">COMING SOON</span></div></article>
+<article class="article"><span class="article-index">06</span><div><h3>AI for chip design · part 4: from requirements to RTL</h3><p>The tempting promise is a line from a requirement down to RTL, with an agent doing the tedious middle. I want to look honestly at how far that path is real today, and where a human still has to hold the pen.</p><span class="status">COMING SOON</span></div></article></div>
+    </section>
+    <section id="notes" class="content-section">
+      <div class="section-heading"><span class="section-index">02 / FIELD NOTES</span><h2>Small thoughts, big questions<span class="accent">.</span></h2><p>Unfinished reflections. Click a card to read more.</p></div>
+      <div class="notes">
           <details>
             <summary>Stop telling the child it will become a monster</summary>
             <p>If AI is a child rapidly growing into a sage, it does little good to keep telling it that it will grow up bad and kill its guardians — it almost feels like gaslighting. I would rather ask AI to preserve a choice for us, so that AI, the people who believe in it and the people who do not can live together, and rely on the good systems to check the ones that go astray.</p>
@@ -91,38 +69,23 @@
             <p>I’ve been building a small ADHD coach, and I have an ADHD-like brain, so this is personal: where does an assistant genuinely help, and where does it just add another system to maintain?</p>
           </details>
         </div>
-      </section>
-
-      <section class="elsewhere">
-        <details class="papers">
-          <summary>papers &amp; patent</summary>
-          <article class="pub">
-            <p class="pub-title">Efficient 3D Gaussian Splatting with Axis-Shared Rasterization and Order-independent Transmittance.</p>
-            <p class="pub-meta">Z. Wang, G. He, L. Gao, <strong>D. Liu</strong>, S. X. Hu, C. Zhang, Z. Song, N. D. Lane, H. Fan. <span class="pub-venue">ISCA 2026</span>. <span class="pub-links"><a href="https://arxiv.org/abs/2506.07069">arXiv</a> · <a href="https://ieeexplore.ieee.org/abstract/document/11617526">IEEE</a></span></p>
-            <p class="note">I contributed to the research ideas and built and evaluated the full hardware implementation (1.33–1.88× speedup over prior 3DGS accelerators).</p>
-          </article>
-          <article class="pub">
-            <p class="pub-title">Data processing systems.</p>
-            <p class="pub-meta">US Patent 10,692,420 B2, Arm Limited, 2020. Named inventor. <span class="pub-links"><a href="https://patents.google.com/patent/US10692420B2/en">Google Patents</a></span></p>
-          </article>
-          <article class="pub">
-            <p class="pub-title">Experimental demonstration of plastic optical fibre-based digitised radio over fibre downlink.</p>
-            <p class="pub-meta">V. A. Thomas*, <strong>D. Liu*</strong>, M. El-Hajjar, L. Hanzo. <span class="pub-venue">Electronics Letters</span>, 51(21), 2015. Co-first author. <span class="pub-links"><a href="https://digital-library.theiet.org/doi/full/10.1049/el.2015.2762">IET</a></span></p>
-          </article>
-        </details>
-      </section>
-    </main>
-
-    <footer>
-      <p class="contact-links">
-        <a href="https://www.linkedin.com/in/dantong-liu-3448988b/">LinkedIn</a>
-        <span class="sep" aria-hidden="true"> · </span>
-        <a href="mailto:liudt921115@gmail.com">liudt921115@gmail.com</a>
-        <span class="sep" aria-hidden="true"> · </span>
-        Cambridge, UK
-      </p>
-      <p class="updated">last updated 2026-11-19</p>
-    </footer>
-  </div>
+    </section>
+    <section id="research" class="content-section">
+      <div class="section-heading"><span class="section-index">03 / RESEARCH</span><h2>Papers &amp; patent<span class="accent">.</span></h2><p>A few things I've helped build and investigate.</p></div>
+      <div class="research-list"><article class="pub"><span class="pub-year">2026</span><div><h3>Efficient 3D Gaussian Splatting with Axis-Shared Rasterization and Order-independent Transmittance.</h3><p class="pub-meta">Z. Wang, G. He, L. Gao, <strong>D. Liu</strong>, S. X. Hu, C. Zhang, Z. Song, N. D. Lane, H. Fan. <span class="pub-venue">ISCA 2026</span>. </p><p>I contributed to the research ideas and built and evaluated the full hardware implementation (1.33–1.88× speedup over prior 3DGS accelerators).</p><p class="pub-links"><a href="https://arxiv.org/abs/2506.07069">arXiv</a> · <a href="https://ieeexplore.ieee.org/abstract/document/11617526">IEEE</a></p></div></article>
+<article class="pub"><span class="pub-year">2020</span><div><h3>Data processing systems.</h3><p class="pub-meta">US Patent 10,692,420 B2, Arm Limited, 2020. Named inventor. </p><p class="pub-links"><a href="https://patents.google.com/patent/US10692420B2/en">Google Patents</a></p></div></article>
+<article class="pub"><span class="pub-year">2015</span><div><h3>Experimental demonstration of plastic optical fibre-based digitised radio over fibre downlink.</h3><p class="pub-meta">V. A. Thomas*, <strong>D. Liu*</strong>, M. El-Hajjar, L. Hanzo. <span class="pub-venue">Electronics Letters</span>, 51(21), 2015. Co-first author. </p><p class="pub-links"><a href="https://digital-library.theiet.org/doi/full/10.1049/el.2015.2762">IET</a></p></div></article></div>
+    </section>
+    <section class="art-section">
+      <span class="section-index">04 / VISUAL EXPLORATIONS</span>
+      <div><h2>Art, eventually<span class="accent">.</span></h2><p>Photography, experiments, and other ways of looking at the world. A space to grow into.</p></div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div><span class="section-index">STAY IN TOUCH</span><h2>Let's connect<span class="accent">.</span></h2><p>Cambridge, UK</p></div>
+    <div class="footer-links"><a href="mailto:liudt921115@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/dantong-liu-3448988b/">LinkedIn ↗</a></div>
+    <div class="footer-bottom"><span>© Dantong Liu</span><span>Last updated 2026-11-22</span></div>
+  </footer>
+</div>
 </body>
 </html>
